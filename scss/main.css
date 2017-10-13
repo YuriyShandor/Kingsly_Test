@@ -209,5 +209,5 @@ header .triangles {
 }
 
 header .color-triangle {
-  top: 100px;
+  transform: translateY(100px);
 }
