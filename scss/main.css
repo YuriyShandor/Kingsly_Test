@@ -1,367 +1,320 @@
 @font-face {
   font-family: DinPro;
   src: url(../fonts/DINPro-Cond.otf);
-  font-weight: 400;
-}
+  font-weight: 400; }
 
 @font-face {
   font-family: DinPro;
   src: url(../fonts/DINPro-CondBlack.otf);
-  font-weight: 900;
-}
+  font-weight: 900; }
 
 @font-face {
   font-family: Roboto;
   src: url(../fonts/Roboto-Light.ttf);
-  font-weight: 300;
-}
+  font-weight: 300; }
 
 * {
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 body {
   font-family: DinPro, Arial sans-serif;
   font-weight: 400;
   margin: 0;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-}
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
 
 .container {
   width: 1170px;
   margin: 0 auto;
-  position: relative;
-}
+  position: relative; }
 
 a {
   text-decoration: none;
   outline: none;
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 header {
   width: 100%;
   height: 786px;
   background: #152938;
   z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  position: relative;
-}
-
-header .top-header {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 40px;
-}
-
-header .top-header .kingsly-logo {
-  display: flex;
-  align-items: center;
-}
-
-header .top-header .kingsly-logo img {
-  width: 77px;
-  height: 50px;
-}
-
-header .top-header .kingsly-logo a {
-  display: flex;
-  flex-direction: column;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 24px;
-  font-weight: 900;
-  margin-left: 7px;
-  cursor: pointer;
-  transition: all, 0.5s;
-}
-
-header .top-header .kingsly-logo a span {
-  font-size: 13px;
-  font-weight: 400;
-}
-
-header .top-header .kingsly-logo a:hover {
-  color: #02f1f3;
-}
-
-header .top-header .order-call {
-  display: flex;
-  align-items: center;
-}
-
-header .top-header .order-call .order-call__img {
-  width: 41px;
-  height: 40px;
-}
-
-header .top-header .order-call .order-call__link {
-  display: flex;
-  flex-direction: column;
-  margin-left: 12px;
-}
-
-header .top-header .order-call .order-call__link span {
-  font-family: Roboto;
-  font-size: 18px;
-  font-weight: 300;
-  color: #fff;
-}
-
-header .top-header .order-call .order-call__link a {
-  font-size: 19px;
-  font-weight: 900;
-  color: #02f1f3;
-  text-transform: uppercase;
-  transition: all, 0.3s;
-}
-
-header .top-header .order-call .order-call__link a:hover {
-  color: #02bfc0;
-}
-
-header h1 {
-  margin: 0;
-  margin-top: 140px;
-  font-size: 59px;
-  font-weight: 900;
-  color: #fff;
-  width: 50%;
-  text-transform: uppercase;
-}
-
-header .divider {
-  width: 83px;
-  margin-top: -5px;
-  transform: translateX(-10px);
-}
-
-header h3 {
-  margin: 0;
-  font-family: Roboto;
-  font-weight: 300;
-  font-size: 20px;
-  color: #fff;
-  width: 40%;
-}
-
-header .download-presentation {
-  margin-top: 35px;
-  margin-left: 5px;
-  position: relative;
-  width: 300px;
-  height: 117px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-header .download-presentation img {
-  position: absolute;
-}
-
-header .download-presentation a {
-  z-index: 10;
-  font-size: 19px;
-  font-weight: 900;
-  color: #fff;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: all, 0.3s;
-}
-
-header .download-presentation a:hover {
-  color: #90fdfe;
-}
-
-header .look-portfolio {
-  position: absolute;
-  transform: rotate(-90deg);
-  bottom: 77px;
-  right: -77px;
-  font-size: 19px;
-  font-weight: 900;
-  color: #0debf3;
-  cursor: pointer;
-  z-index: 10;
-  text-transform: uppercase;
-  transition: all, 0.3s;
-}
-
-header .look-portfolio i {
-  margin-right: 5px;
-}
-
-header .look-portfolio:hover {
-  color: #02bfc0;
-}
-
-header .lion {
-  position: absolute;
-  bottom: -43px;
-  right: 0;
-}
-
-header .triangle-block {
-  position: absolute;
-  width: inherit;
-  height: inherit;
-  left: 0;
-  top: 0;
-  background-position: left top;
-  background-repeat: no-repeat;
-  z-index: -1;
-}
-
-header .line-triangle__block {
-  background-image: url(../img/line-triangle.png);
-}
-
-header .color-triangle__block {
-  transform: translateY(100px);
-  background-image: url(../img/color-triangle.png);
-}
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative; }
+  header .top-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 40px; }
+    header .top-header .kingsly-logo {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      header .top-header .kingsly-logo img {
+        width: 77px;
+        height: 50px; }
+      header .top-header .kingsly-logo a {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: 900;
+        margin-left: 7px;
+        cursor: pointer;
+        transition: all, 0.5s; }
+        header .top-header .kingsly-logo a span {
+          font-size: 13px;
+          font-weight: 400; }
+        header .top-header .kingsly-logo a:hover {
+          color: #02f1f3; }
+    header .top-header .order-call {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      header .top-header .order-call .order-call__img {
+        width: 41px;
+        height: 40px; }
+      header .top-header .order-call .order-call__link {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        margin-left: 12px; }
+        header .top-header .order-call .order-call__link span {
+          font-family: Roboto;
+          font-size: 18px;
+          font-weight: 300;
+          color: #fff; }
+        header .top-header .order-call .order-call__link a {
+          font-size: 19px;
+          font-weight: 900;
+          color: #02f1f3;
+          text-transform: uppercase;
+          transition: all, 0.3s; }
+          header .top-header .order-call .order-call__link a:hover {
+            color: #02bfc0; }
+  header h1 {
+    margin: 0;
+    margin-top: 140px;
+    font-size: 59px;
+    font-weight: 900;
+    color: #fff;
+    width: 50%;
+    text-transform: uppercase; }
+  header .divider {
+    width: 83px;
+    margin-top: -5px;
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px); }
+  header h3 {
+    margin: 0;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 20px;
+    color: #fff;
+    width: 40%; }
+  header .download-presentation {
+    margin-top: 35px;
+    margin-left: 5px;
+    position: relative;
+    width: 300px;
+    height: 117px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    header .download-presentation img {
+      position: absolute; }
+    header .download-presentation a {
+      z-index: 10;
+      font-size: 19px;
+      font-weight: 900;
+      color: #fff;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: all, 0.3s; }
+      header .download-presentation a:hover {
+        color: #90fdfe; }
+  header .look-portfolio {
+    position: absolute;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    bottom: 77px;
+    right: -77px;
+    font-size: 19px;
+    font-weight: 900;
+    color: #0debf3;
+    cursor: pointer;
+    z-index: 10;
+    text-transform: uppercase;
+    transition: all, 0.3s; }
+    header .look-portfolio i {
+      margin-right: 5px; }
+    header .look-portfolio:hover {
+      color: #02bfc0; }
+  header .lion {
+    position: absolute;
+    bottom: -43px;
+    right: 0; }
+  header .triangle-block {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    left: 0;
+    top: 0;
+    background-position: left top;
+    background-repeat: no-repeat;
+    z-index: -1; }
+  header .line-triangle__block {
+    background-image: url(../img/line-triangle.png); }
+  header .color-triangle__block {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+    background-image: url(../img/color-triangle.png); }
 
 @media screen and (max-width: 1199px) {
   .container {
-    width: 980px;
-  }
+    width: 980px; }
   header h1 {
     margin-top: 120px;
-    font-size: 52px;
-  }
+    font-size: 52px; }
   header .lion {
-    width: 700px;
-  }
-}
+    width: 700px; } }
 
 @media screen and (max-width: 1024px) {
   .container {
-    width: 645px;
-  }
+    width: 645px; }
   header {
-    height: 826px;
-  }
-  header .top-header {
-    margin-top: 30px;
-  }
-  header h1 {
-    margin-top: 70px;
-    font-size: 36px;
-    width: 100%;
-    text-align: center;
-  }
-  header .divider {
-    width: 183px;
-    margin-left: 256px;
-    margin-top: -30px;
-    margin-bottom: -30px;
-  }
-  header h3 {
-    width: 82%;
-    text-align: center;
-    margin: 0 auto;
-  }
-  header .download-presentation {
-    margin-left: 50px;
-    margin-top: 30px;
-    margin-bottom: 280px;
-  }
-  header .lion {
-    width: 640px;
-  }
-}
+    height: 826px; }
+    header .top-header {
+      margin-top: 30px; }
+    header h1 {
+      margin-top: 70px;
+      font-size: 36px;
+      width: 100%;
+      text-align: center; }
+    header .divider {
+      width: 183px;
+      margin-left: 256px;
+      margin-top: -30px;
+      margin-bottom: -30px; }
+    header h3 {
+      width: 82%;
+      text-align: center;
+      margin: 0 auto; }
+    header .download-presentation {
+      margin-left: 50px;
+      margin-top: 30px;
+      margin-bottom: 280px; }
+    header .lion {
+      width: 640px; } }
 
 @media screen and (max-width: 767px) {
   .container {
-    width: 298px;
-  }
+    width: 298px; }
   header {
-    height: 675px;
-  }
-  header .top-header {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-    width: 295px;
-  }
-  header .top-header .kingsly-logo {
-    width: 120px;
-    margin-left: 5px;
-  }
-  header .top-header .kingsly-logo img {
-    width: 47px;
-    height: 32px;
-  }
-  header .top-header .kingsly-logo a {
-    font-size: 18px;
-    margin-left: 5px;
-  }
-  header .top-header .kingsly-logo a span {
-    font-size: 10px;
-  }
-  header .top-header .order-call {
-    margin-right: 0;
-  }
-  header .top-header .order-call .order-call__img {
-    width: 26px;
-    height: 25px;
-  }
-  header .top-header .order-call .order-call__link {
-    margin-left: 7px;
-  }
-  header .top-header .order-call .order-call__link span {
-    font-size: 12px;
-  }
-  header .top-header .order-call .order-call__link a {
-    font-size: 14px;
-  }
-  header h1 {
-    margin-top: 50px;
-    font-size: 30px;
-  }
-  header .divider {
-    width: 100px;
-    margin-left: 115px;
-    margin-top: -15px;
-    margin-bottom: -20px;
-  }
-  header h3 {
-    font-size: 18px;
-    font-weight: 400;
-  }
-  header .download-presentation {
-    margin-left: 0;
-    margin-top: 10px;
-    margin-bottom: 150px;
-    transform: scale(0.85);
-  }
-  header .download-presentation a {
-    transform: translateY(-15px);
-  }
-  header .look-portfolio {
-    position: absolute;
-    transform: rotate(0);
-    bottom: 185px;
-    right: 80px;
-    font-size: 16px;
-    color: #fff;
-  }
-  header .look-portfolio:hover {
-    color: #02f1f3;
-  }
-  header .look-portfolio i {
-    display: none;
-  }
-  header .lion {
-    width: 280px;
-    transform: translateX(-20px);
-  }
-  header .color-triangle__block {
-    left: -80px;
-    top: 70px;
-  }
-}
+    height: 675px; }
+    header .top-header {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      margin-top: 20px;
+      width: 295px; }
+      header .top-header .kingsly-logo {
+        width: 120px;
+        margin-left: 5px; }
+        header .top-header .kingsly-logo img {
+          width: 47px;
+          height: 32px; }
+        header .top-header .kingsly-logo a {
+          font-size: 18px;
+          margin-left: 5px; }
+          header .top-header .kingsly-logo a span {
+            font-size: 10px; }
+      header .top-header .order-call {
+        margin-right: 0; }
+        header .top-header .order-call .order-call__img {
+          width: 26px;
+          height: 25px; }
+        header .top-header .order-call .order-call__link {
+          margin-left: 7px; }
+          header .top-header .order-call .order-call__link span {
+            font-size: 12px; }
+          header .top-header .order-call .order-call__link a {
+            font-size: 14px; }
+    header h1 {
+      margin-top: 50px;
+      font-size: 30px; }
+    header .divider {
+      width: 100px;
+      margin-left: 115px;
+      margin-top: -15px;
+      margin-bottom: -20px; }
+    header h3 {
+      font-size: 18px;
+      font-weight: 400; }
+    header .download-presentation {
+      margin-left: 0;
+      margin-top: 10px;
+      margin-bottom: 150px;
+      -webkit-transform: scale(0.85);
+              transform: scale(0.85); }
+      header .download-presentation a {
+        -webkit-transform: translateY(-15px);
+                transform: translateY(-15px); }
+    header .look-portfolio {
+      position: absolute;
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+      bottom: 185px;
+      right: 80px;
+      font-size: 16px;
+      color: #fff; }
+      header .look-portfolio:hover {
+        color: #02f1f3; }
+      header .look-portfolio i {
+        display: none; }
+    header .lion {
+      width: 280px;
+      -webkit-transform: translateX(-20px);
+              transform: translateX(-20px); }
+    header .color-triangle__block {
+      left: -80px;
+      top: 70px; } }
