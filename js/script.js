@@ -1,20 +1,14 @@
 $(document).ready(function(){
 
   $('header').mousemove(function(e){
-    var x = -(e.pageX + this.offsetLeft) / 100;
-    var y = -(e.pageY + this.offsetTop) / 100;
+    var x = -(e.pageX + this.offsetLeft) / 130;
+    var y = -(e.pageY + this.offsetTop) / 130;
 
-    var a = (e.pageX + this.offsetLeft) / 100;
-    var b = (e.pageY + this.offsetTop) / 100;
+    var a = (e.pageX + this.offsetLeft) / 130;
+    var b = (e.pageY + this.offsetTop) / 130;
 
-    $('.line-triangle').css(
-      {"top": y + 'px',
-      "left": x + 'px'}
-    );
+    $('.line-triangle__block').css('background-position', x + 'px ' + y + 'px');
 
-    $('.color-triangle').css(
-      {"top": b + 'px',
-      "left": a + 'px'}
-    );
+    $('.color-triangle__block').css('background-position', a + 'px ' + b + 'px');
   });
 });
