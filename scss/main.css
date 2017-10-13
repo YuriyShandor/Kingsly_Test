@@ -1,0 +1,121 @@
+@font-face {
+  font-family: DinPro;
+  src: url(../fonts/DINPro-Cond.otf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: DinPro;
+  src: url(../fonts/DINPro-CondBlack.otf);
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto-Light.ttf);
+  font-weight: 300;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: DinPro, Arial sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+}
+
+header {
+  width: 100%;
+  height: 786px;
+  background: #152938;
+  display: flex;
+  flex-direction: column;
+}
+
+header .top-header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+header .top-header .kingsly-logo {
+  display: flex;
+  align-items: center;
+}
+
+header .top-header .kingsly-logo img {
+  width: 77px;
+  height: 50px;
+}
+
+header .top-header .kingsly-logo a {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 900;
+  margin-left: 7px;
+  cursor: pointer;
+  transition: all, 0.5s;
+}
+
+header .top-header .kingsly-logo a span {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+header .top-header .kingsly-logo a:hover {
+  color: #02f1f3;
+}
+
+header .top-header .order-call {
+  display: flex;
+}
+
+header .top-header .order-call .order-call__img {
+  width: 41px;
+  height: 40px;
+}
+
+header .top-header .order-call .order-call__link {
+  display: flex;
+  flex-direction: column;
+  margin-left: 12px;
+}
+
+header .top-header .order-call .order-call__link span {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 300;
+  color: #fff;
+}
+
+header .top-header .order-call .order-call__link a {
+  font-size: 19px;
+  font-weight: 900;
+  color: #02f1f3;
+  text-transform: uppercase;
+  transition: all, 0.3s;
+}
+
+header .top-header .order-call .order-call__link a:hover {
+  color: #018d8e;
+}
