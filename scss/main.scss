@@ -49,6 +49,7 @@ header {
   background: #152938;
   display: flex;
   flex-direction: column;
+  position: relative;
 
   .top-header {
     display: flex;
@@ -88,6 +89,7 @@ header {
 
     .order-call {
       display: flex;
+      align-items: center;
 
       .order-call__img {
         width: 41px;
@@ -119,5 +121,95 @@ header {
         }
       }
     }
+  }
+
+  h1 {
+    margin: 0;
+    margin-top: 140px;
+    font-size: 59px;
+    font-weight: 900;
+    color: #fff;
+    width: 50%;
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+
+  .divider {
+    width: 83px;
+    margin-top: -5px;
+    transform: translateX(-10px);
+  }
+
+  h3 {
+    margin: 0;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 20px;
+    color: #fff;
+    width: 40%;
+  }
+
+  .download-presentation {
+    margin-top: 35px;
+    margin-left: 5px;
+    position: relative;
+    width: 300px;
+    height: 117px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      position: absolute;
+    }
+
+    a {
+      z-index: 10;
+      font-size: 19px;
+      font-weight: 900;
+      color: #fff;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: all, 0.3s;
+
+      &:hover {
+        color: lighten(#02f1f3, 30%);
+      }
+    }
+  }
+
+  .look-portfolio {
+    position: absolute;
+    transform: rotate(-90deg);
+    bottom: 77px;
+    right: -77px;
+    font-size: 19px;
+    font-weight: 900;
+    color: #0debf3;
+    text-transform: uppercase;
+    transition: all, 0.3s;
+
+    i {
+      margin-right: 5px;
+    }
+
+    &:hover {
+      color: darken(#02f1f3, 20%);
+    }
+  }
+
+  .lion {
+    position: absolute;
+    bottom: -43px;
+    right: -33px;
+  }
+
+  .triangles {
+    position: absolute;
+    width: 100%;
+  }
+
+  .color-triangle {
+    top: 100px;
   }
 }
